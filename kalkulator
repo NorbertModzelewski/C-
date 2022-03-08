@@ -1,0 +1,36 @@
+const int PLUS = 1;
+const int MINUS = 2;
+const int RAZY = 3;
+const int PODZIELIC = 4;
+ 
+double a = 0;
+double b = 0;
+int dzialanie = 0;
+bool kropka = false; // kropka dziesietna
+int ilepoprzecinku = 0; // ilosc cyfr po przecinku gdy kropka jest wcisnieta
+int znak = PLUS; // plus lub minus
+
+bool czykasowacekran = false;
+
+Te zmienne i stałe przydadzą nam się w dalszej części programu. Teraz dodajemy dwie funkcje (w klasie frmKalkulator):
+
+public void pokazznaki()
+{
+    cmdSuma.Enabled = true;
+    cmdRoznica.Enabled = true;
+    cmdIloczyn.Enabled = true;
+    cmdIloraz.Enabled = true;
+    if (dzialanie != 0) cmdWynik.Enabled = true;
+    cmdZnak.Enabled = true;
+}
+ 
+public void ukryjznaki()
+{
+    cmdSuma.Enabled = false;
+    cmdRoznica.Enabled = false;
+    cmdIloczyn.Enabled = false;
+    cmdIloraz.Enabled = false;
+    cmdWynik.Enabled = false;
+    cmdZnak.Enabled = false;
+
+}
