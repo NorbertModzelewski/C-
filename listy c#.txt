@@ -1,0 +1,25 @@
+List<String> Students = new List<string>();
+
+Students.Add("Magda");
+Students.Add("Dawid");
+Students.Add("Norbert");
+Students.Add("Filip");
+Students.Add("Kacper");
+
+foreach(string student in Students)
+{
+    Console.WriteLine(student);
+}
+List<int> Numbers = new List<int>();
+
+Numbers.Add(18);
+Numbers.Add(22);
+Numbers.Add(17);
+Numbers.Add(30);
+Numbers.Add(4);
+
+foreach (int number in Numbers)
+{
+    Console.WriteLine(number);
+}
+
